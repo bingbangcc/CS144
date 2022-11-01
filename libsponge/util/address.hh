@@ -30,6 +30,7 @@ class Address {
 
   public:
     //! Construct by resolving a hostname and servicename.
+    // (主机名，提供服务的端口名)其实就是(ip，port)的另一种写法
     Address(const std::string &hostname, const std::string &service);
 
     //! Construct from dotted-quad string ("18.243.0.1") and numeric port.

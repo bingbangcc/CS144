@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bingbong/CS144/tests/byte_stream_capacity.cc" "/home/bingbong/CS144/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o"
+  "/home/bingbong/network/tests/byte_stream_capacity.cc" "/home/bingbong/network/cmake-build-debug/tests/CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bingbong/CS144/cmake-build-debug/tests/CMakeFiles/spongechecks.dir/DependInfo.cmake"
-  "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/home/bingbong/network/cmake-build-debug/tests/CMakeFiles/spongechecks.dir/DependInfo.cmake"
+  "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

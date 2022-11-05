@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/CS144
+CMAKE_SOURCE_DIR = /home/bingbong/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/CS144/cmake-build-debug/CMakeFiles /home/bingbong/CS144/cmake-build-debug/apps/CMakeFiles/progress.marks
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/CS144/cmake-build-debug/CMakeFiles 0
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/network/cmake-build-debug/CMakeFiles /home/bingbong/network/cmake-build-debug/apps/CMakeFiles/progress.marks
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/network/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/clean
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/CMakeFiles/webget.dir/rule:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/webget.dir/rule
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 apps/CMakeFiles/webget.dir/rule
 .PHONY : apps/CMakeFiles/webget.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ webget: apps/CMakeFiles/webget.dir/rule
 
 # fast build rule for target.
 webget/fast:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
 .PHONY : webget/fast
 
 webget.o: webget.cc.o
@@ -142,7 +142,7 @@ webget.o: webget.cc.o
 
 # target to build an object file
 webget.cc.o:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.o
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.o
 .PHONY : webget.cc.o
 
 webget.i: webget.cc.i
@@ -151,7 +151,7 @@ webget.i: webget.cc.i
 
 # target to preprocess a source file
 webget.cc.i:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.i
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.i
 .PHONY : webget.cc.i
 
 webget.s: webget.cc.s
@@ -160,7 +160,7 @@ webget.s: webget.cc.s
 
 # target to generate assembly for a file
 webget.cc.s:
-	cd /home/bingbong/CS144/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.s
+	cd /home/bingbong/network/cmake-build-debug && $(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.s
 .PHONY : webget.cc.s
 
 # Help Target
@@ -187,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

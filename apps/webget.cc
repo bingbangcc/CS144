@@ -19,6 +19,8 @@ void get_URL(const string &host, const string &path) {
 
     TCPSocket sock;
     sock.connect(Address(host, "http"));
+    // 这里最后有两个\r\n，第一个\r\n是connection：close那一行的，第二个是整个语段的
+    // 要有第二个才能让接收方知道你wirte结束了，相当于EOF
     sock.write("GET " + path + " " + "HTTP/1.1\r\nHost: " + host + "\r\nConnection: close\r\n\r\n");
     while (!sock.eof()) {
         cout << sock.read();

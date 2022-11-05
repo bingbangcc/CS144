@@ -1,4 +1,4 @@
-# Install script for directory: /home/bingbong/CS144
+# Install script for directory: /home/bingbong/network
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bingbong/CS144/cmake-build-debug/libsponge/cmake_install.cmake")
-  include("/home/bingbong/CS144/cmake-build-debug/apps/cmake_install.cmake")
-  include("/home/bingbong/CS144/cmake-build-debug/tests/cmake_install.cmake")
-  include("/home/bingbong/CS144/cmake-build-debug/doctests/cmake_install.cmake")
+  include("/home/bingbong/network/cmake-build-debug/libsponge/cmake_install.cmake")
+  include("/home/bingbong/network/cmake-build-debug/apps/cmake_install.cmake")
+  include("/home/bingbong/network/cmake-build-debug/tests/cmake_install.cmake")
+  include("/home/bingbong/network/cmake-build-debug/doctests/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bingbong/CS144/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bingbong/network/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/CS144
+CMAKE_SOURCE_DIR = /home/bingbong/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 
 # Utility rule file for check_webget.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
 include CMakeFiles/check_webget.dir/progress.make
 
 CMakeFiles/check_webget:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/CS144/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing webget..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing webget..."
 	/usr/bin/ctest --output-on-failure --timeout 10 -R 't_webget'
 
 check_webget: CMakeFiles/check_webget
@@ -72,6 +72,6 @@ CMakeFiles/check_webget.dir/clean:
 .PHONY : CMakeFiles/check_webget.dir/clean
 
 CMakeFiles/check_webget.dir/depend:
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/CS144 /home/bingbong/CS144 /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug/CMakeFiles/check_webget.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/network /home/bingbong/network /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug/CMakeFiles/check_webget.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_webget.dir/depend
 

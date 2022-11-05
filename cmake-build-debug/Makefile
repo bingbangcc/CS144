@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/CS144
+CMAKE_SOURCE_DIR = /home/bingbong/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -89,11 +78,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/CS144/cmake-build-debug/CMakeFiles /home/bingbong/CS144/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/network/cmake-build-debug/CMakeFiles /home/bingbong/network/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/CS144/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bingbong/network/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,110 +122,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named check
-
-# Build rule for target.
-check: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check
-.PHONY : check
-
-# fast build rule for target.
-check/fast:
-	$(MAKE) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
-.PHONY : check/fast
-
-#=============================================================================
-# Target rules for targets named check_lab6
-
-# Build rule for target.
-check_lab6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab6
-.PHONY : check_lab6
-
-# fast build rule for target.
-check_lab6/fast:
-	$(MAKE) -f CMakeFiles/check_lab6.dir/build.make CMakeFiles/check_lab6.dir/build
-.PHONY : check_lab6/fast
-
-#=============================================================================
-# Target rules for targets named check_lab3
-
-# Build rule for target.
-check_lab3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab3
-.PHONY : check_lab3
-
-# fast build rule for target.
-check_lab3/fast:
-	$(MAKE) -f CMakeFiles/check_lab3.dir/build.make CMakeFiles/check_lab3.dir/build
-.PHONY : check_lab3/fast
-
-#=============================================================================
-# Target rules for targets named check_lab2
-
-# Build rule for target.
-check_lab2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab2
-.PHONY : check_lab2
-
-# fast build rule for target.
-check_lab2/fast:
-	$(MAKE) -f CMakeFiles/check_lab2.dir/build.make CMakeFiles/check_lab2.dir/build
-.PHONY : check_lab2/fast
-
-#=============================================================================
-# Target rules for targets named check_lab5
-
-# Build rule for target.
-check_lab5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab5
-.PHONY : check_lab5
-
-# fast build rule for target.
-check_lab5/fast:
-	$(MAKE) -f CMakeFiles/check_lab5.dir/build.make CMakeFiles/check_lab5.dir/build
-.PHONY : check_lab5/fast
-
-#=============================================================================
-# Target rules for targets named check_lab4
-
-# Build rule for target.
-check_lab4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab4
-.PHONY : check_lab4
-
-# fast build rule for target.
-check_lab4/fast:
-	$(MAKE) -f CMakeFiles/check_lab4.dir/build.make CMakeFiles/check_lab4.dir/build
-.PHONY : check_lab4/fast
-
-#=============================================================================
-# Target rules for targets named check_lab1
-
-# Build rule for target.
-check_lab1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab1
-.PHONY : check_lab1
-
-# fast build rule for target.
-check_lab1/fast:
-	$(MAKE) -f CMakeFiles/check_lab1.dir/build.make CMakeFiles/check_lab1.dir/build
-.PHONY : check_lab1/fast
-
-#=============================================================================
-# Target rules for targets named check_lab0
-
-# Build rule for target.
-check_lab0: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab0
-.PHONY : check_lab0
-
-# fast build rule for target.
-check_lab0/fast:
-	$(MAKE) -f CMakeFiles/check_lab0.dir/build.make CMakeFiles/check_lab0.dir/build
-.PHONY : check_lab0/fast
-
-#=============================================================================
 # Target rules for targets named check_webget
 
 # Build rule for target.
@@ -250,6 +146,123 @@ format: cmake_check_build_system
 format/fast:
 	$(MAKE) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
 .PHONY : format/fast
+
+#=============================================================================
+# Target rules for targets named check_lab0
+
+# Build rule for target.
+check_lab0: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab0
+.PHONY : check_lab0
+
+# fast build rule for target.
+check_lab0/fast:
+	$(MAKE) -f CMakeFiles/check_lab0.dir/build.make CMakeFiles/check_lab0.dir/build
+.PHONY : check_lab0/fast
+
+#=============================================================================
+# Target rules for targets named check_lab1
+
+# Build rule for target.
+check_lab1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab1
+.PHONY : check_lab1
+
+# fast build rule for target.
+check_lab1/fast:
+	$(MAKE) -f CMakeFiles/check_lab1.dir/build.make CMakeFiles/check_lab1.dir/build
+.PHONY : check_lab1/fast
+
+#=============================================================================
+# Target rules for targets named check_lab4
+
+# Build rule for target.
+check_lab4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab4
+.PHONY : check_lab4
+
+# fast build rule for target.
+check_lab4/fast:
+	$(MAKE) -f CMakeFiles/check_lab4.dir/build.make CMakeFiles/check_lab4.dir/build
+.PHONY : check_lab4/fast
+
+#=============================================================================
+# Target rules for targets named check_lab5
+
+# Build rule for target.
+check_lab5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab5
+.PHONY : check_lab5
+
+# fast build rule for target.
+check_lab5/fast:
+	$(MAKE) -f CMakeFiles/check_lab5.dir/build.make CMakeFiles/check_lab5.dir/build
+.PHONY : check_lab5/fast
+
+#=============================================================================
+# Target rules for targets named check_lab2
+
+# Build rule for target.
+check_lab2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab2
+.PHONY : check_lab2
+
+# fast build rule for target.
+check_lab2/fast:
+	$(MAKE) -f CMakeFiles/check_lab2.dir/build.make CMakeFiles/check_lab2.dir/build
+.PHONY : check_lab2/fast
+
+#=============================================================================
+# Target rules for targets named check_lab3
+
+# Build rule for target.
+check_lab3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab3
+.PHONY : check_lab3
+
+# fast build rule for target.
+check_lab3/fast:
+	$(MAKE) -f CMakeFiles/check_lab3.dir/build.make CMakeFiles/check_lab3.dir/build
+.PHONY : check_lab3/fast
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
+
+#=============================================================================
+# Target rules for targets named check_lab6
+
+# Build rule for target.
+check_lab6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab6
+.PHONY : check_lab6
+
+# fast build rule for target.
+check_lab6/fast:
+	$(MAKE) -f CMakeFiles/check_lab6.dir/build.make CMakeFiles/check_lab6.dir/build
+.PHONY : check_lab6/fast
+
+#=============================================================================
+# Target rules for targets named check
+
+# Build rule for target.
+check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check
+.PHONY : check
+
+# fast build rule for target.
+check/fast:
+	$(MAKE) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
+.PHONY : check/fast
 
 #=============================================================================
 # Target rules for targets named sponge
@@ -400,19 +413,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... check"
-	@echo "... check_lab6"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... check_lab3"
-	@echo "... check_lab2"
-	@echo "... rebuild_cache"
-	@echo "... check_lab5"
-	@echo "... check_lab4"
-	@echo "... check_lab1"
-	@echo "... check_lab0"
 	@echo "... check_webget"
 	@echo "... format"
+	@echo "... check_lab0"
+	@echo "... check_lab1"
+	@echo "... check_lab4"
+	@echo "... check_lab5"
+	@echo "... check_lab2"
+	@echo "... check_lab3"
+	@echo "... doc"
+	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... check_lab6"
+	@echo "... check"
 	@echo "... sponge"
 	@echo "... webget"
 	@echo "... byte_stream_many_writes"

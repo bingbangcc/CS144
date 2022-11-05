@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/CS144
+CMAKE_SOURCE_DIR = /home/bingbong/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 
 # Utility rule file for format.
 
@@ -71,6 +71,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/CS144 /home/bingbong/CS144 /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/network /home/bingbong/network /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/format.dir/depend
 

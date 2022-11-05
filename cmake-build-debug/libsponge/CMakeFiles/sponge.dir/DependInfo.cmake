@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bingbong/CS144/libsponge/byte_stream.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o"
-  "/home/bingbong/CS144/libsponge/util/address.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/address.cc.o"
-  "/home/bingbong/CS144/libsponge/util/buffer.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/buffer.cc.o"
-  "/home/bingbong/CS144/libsponge/util/eventloop.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/eventloop.cc.o"
-  "/home/bingbong/CS144/libsponge/util/file_descriptor.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/file_descriptor.cc.o"
-  "/home/bingbong/CS144/libsponge/util/parser.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/parser.cc.o"
-  "/home/bingbong/CS144/libsponge/util/socket.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/socket.cc.o"
-  "/home/bingbong/CS144/libsponge/util/tun.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/tun.cc.o"
-  "/home/bingbong/CS144/libsponge/util/util.cc" "/home/bingbong/CS144/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/util.cc.o"
+  "/home/bingbong/network/libsponge/byte_stream.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o"
+  "/home/bingbong/network/libsponge/util/address.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/address.cc.o"
+  "/home/bingbong/network/libsponge/util/buffer.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/buffer.cc.o"
+  "/home/bingbong/network/libsponge/util/eventloop.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/eventloop.cc.o"
+  "/home/bingbong/network/libsponge/util/file_descriptor.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/file_descriptor.cc.o"
+  "/home/bingbong/network/libsponge/util/parser.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/parser.cc.o"
+  "/home/bingbong/network/libsponge/util/socket.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/socket.cc.o"
+  "/home/bingbong/network/libsponge/util/tun.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/tun.cc.o"
+  "/home/bingbong/network/libsponge/util/util.cc" "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/util/util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

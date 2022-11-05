@@ -1,4 +1,4 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/bingbong/CS144/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/bingbong/CS144 -B /home/bingbong/CS144/cmake-build-debug"
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/bingbong/network/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/bingbong/network -B /home/bingbong/network/cmake-build-debug"
 -- The C compiler identification is GNU 10.3.0
 -- The CXX compiler identification is GNU 10.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -19,7 +19,7 @@ C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CM
 --     -DCMAKE_BUILD_TYPE=Debug     -- better debugging experience in gdb
 --     -DCMAKE_BUILD_TYPE=RelASan   -- full optimizations plus address and undefined-behavior sanitizers
 --     -DCMAKE_BUILD_TYPE=DebugASan -- debug plus sanitizers
--- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Found Doxygen: /usr/bin/doxygen (found version "1.8.17") found components: doxygen dot 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/bingbong/CS144/cmake-build-debug
+-- Build files have been written to: /home/bingbong/network/cmake-build-debug

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/CS144
+CMAKE_SOURCE_DIR = /home/bingbong/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 
 # Utility rule file for check.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/bingbong/CS144/cmake-build-debug
 include CMakeFiles/check.dir/progress.make
 
 CMakeFiles/check:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/CS144/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing libsponge..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing libsponge..."
 	../tun.sh check 144 145
 	../tap.sh check 10
 	/usr/bin/ctest --output-on-failure --timeout 10 -R '^t_|^arp_|^router_'
@@ -74,6 +74,6 @@ CMakeFiles/check.dir/clean:
 .PHONY : CMakeFiles/check.dir/clean
 
 CMakeFiles/check.dir/depend:
-	cd /home/bingbong/CS144/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/CS144 /home/bingbong/CS144 /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug /home/bingbong/CS144/cmake-build-debug/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/network /home/bingbong/network /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check.dir/depend
 

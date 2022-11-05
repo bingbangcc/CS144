@@ -1,4 +1,4 @@
-# Install script for directory: /home/bingbong/CS144/tests
+# Install script for directory: /home/bingbong/network/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

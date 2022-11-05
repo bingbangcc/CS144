@@ -8,833 +8,1373 @@
 		<Option virtualFolders="CMake Files\;CMake Files\etc\;CMake Files\libsponge\;CMake Files\apps\;CMake Files\tests\;CMake Files\doctests\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_webget">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_webget"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="format">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 format"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab0">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab0"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab1">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab1"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab4">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab4"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab5">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab5"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab2">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab2"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="check_lab3">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab3"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="doc">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="check_lab6">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
+			<Target title="test">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab6"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="check">
-				<Option working_dir="/home/bingbong/network/cmake-build-debug"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab6">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab6"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab5">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab5"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab4">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab4"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__buffer.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__buffer.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab0">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab0"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_libsponge__byte_stream.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_libsponge__byte_stream.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__parser_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__parser_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_libsponge__byte_stream.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_libsponge__byte_stream.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_one_write.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_one_write.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab2">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab2"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__socket_example_3.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__socket_example_3.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__socket_example_3.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_example_3.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__socket_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__file_descriptor.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__file_descriptor.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_construction.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_construction.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__util.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__util.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__socket_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__socket_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__address_example_1.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_example_1.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__socket_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__socket_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__address_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_capacity.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_capacity.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__socket_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__parser_example.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__parser_example.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_apps__webget.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__webget.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__address_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__address.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__address.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_apps__webget.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__webget.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__address_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__address_example_1.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_1.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab3">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab3"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__address_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__parser_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__parser_dt.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__socket_example_1.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_example_1.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__address.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__address.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__address_example_3.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_example_3.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__address_example_3.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_3.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__eventloop.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__eventloop.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__eventloop.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__eventloop.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__parser.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__parser.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__parser.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__parser.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__socket.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__socket.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__socket.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__socket.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_two_writes.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_two_writes.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__tun.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__tun.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__socket_example_1.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__socket_example_1.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__tun.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__tun.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_two_writes.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_two_writes.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_capacity.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_capacity.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="format">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 format"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__util.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__util.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_construction.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_construction.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__parser_example.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__parser_example.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_many_writes.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_many_writes.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_many_writes.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_many_writes.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_one_write.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_one_write.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__byte_stream_test_harness.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_test_harness.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_test_harness.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_test_harness.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__buffer.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__buffer.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_verbose">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_verbose"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_lab1">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab1"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__file_descriptor.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__file_descriptor.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check_webget">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_webget"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sponge">
-				<Option output="/home/bingbong/network/cmake-build-debug/libsponge/libsponge.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/libsponge"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/libsponge/libsponge.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/libsponge"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 sponge"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 sponge"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sponge/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/libsponge/libsponge.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/libsponge"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/libsponge/libsponge.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/libsponge"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 sponge/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 sponge/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/libsponge/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="webget">
-				<Option output="/home/bingbong/network/cmake-build-debug/apps/webget" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/apps"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/apps/webget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/apps"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 webget"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 webget"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="webget/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/apps/webget" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/apps"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/apps/webget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/apps"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 webget/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 webget/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_many_writes">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_many_writes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_many_writes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_many_writes"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_many_writes"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_many_writes/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_many_writes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_many_writes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_many_writes/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_many_writes/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_capacity">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_capacity" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_capacity" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_capacity"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_capacity"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_capacity/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_capacity" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_capacity" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_capacity/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_capacity/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_two_writes">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_two_writes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_two_writes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_two_writes"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_two_writes"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_two_writes/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_two_writes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_two_writes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_two_writes/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_two_writes/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_one_write">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_one_write" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_one_write" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_one_write"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_one_write"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_one_write/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_one_write" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_one_write" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_one_write/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_one_write/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_construction">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_construction" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_construction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_construction"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_construction"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="byte_stream_construction/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/byte_stream_construction" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/byte_stream_construction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_construction/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 byte_stream_construction/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="spongechecks">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/libspongechecks.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/libspongechecks.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 spongechecks"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 spongechecks"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="spongechecks/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/tests/libspongechecks.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/tests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/libspongechecks.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 spongechecks/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 spongechecks/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="parser_dt">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/parser_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/parser_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 parser_dt"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 parser_dt"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="parser_dt/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/parser_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/parser_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 parser_dt/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 parser_dt/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="socket_dt">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/socket_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/socket_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 socket_dt"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 socket_dt"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="socket_dt/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/socket_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/socket_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 socket_dt/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 socket_dt/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="address_dt">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/address_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/address_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 address_dt"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 address_dt"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="address_dt/fast">
-				<Option output="/home/bingbong/network/cmake-build-debug/doctests/address_dt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bingbong/network/cmake-build-debug/doctests"/>
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/doctests/address_dt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/doctests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bingbong/network/libsponge/util"/>
-					<Add directory="/home/bingbong/network/libsponge/tcp_helpers"/>
-					<Add directory="/home/bingbong/network/libsponge"/>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/util"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/libsponge"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 address_dt/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 address_dt/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/doctests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bingbong/network/apps/webget.cc">
+		<Unit filename="/home/bingbong/compiler/network/apps/webget.cc">
 			<Option target="webget"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/doctests/address_dt.cc">
+		<Unit filename="/home/bingbong/compiler/network/doctests/address_dt.cc">
 			<Option target="address_dt"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/doctests/parser_dt.cc">
+		<Unit filename="/home/bingbong/compiler/network/doctests/parser_dt.cc">
 			<Option target="parser_dt"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/doctests/socket_dt.cc">
+		<Unit filename="/home/bingbong/compiler/network/doctests/socket_dt.cc">
 			<Option target="socket_dt"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/byte_stream.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/byte_stream.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/byte_stream.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/byte_stream.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/address.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/address.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/address.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/address.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/buffer.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/buffer.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/buffer.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/buffer.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/eventloop.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/eventloop.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/eventloop.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/eventloop.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/file_descriptor.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/file_descriptor.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/file_descriptor.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/file_descriptor.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/parser.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/parser.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/parser.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/parser.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/socket.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/socket.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/socket.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/socket.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/tun.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/tun.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/tun.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/tun.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/util.cc">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/util.cc">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/util/util.hh">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/util/util.hh">
 			<Option target="sponge"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_capacity.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_capacity.cc">
 			<Option target="byte_stream_capacity"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_construction.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_construction.cc">
 			<Option target="byte_stream_construction"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_many_writes.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_many_writes.cc">
 			<Option target="byte_stream_many_writes"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_one_write.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_one_write.cc">
 			<Option target="byte_stream_one_write"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_test_harness.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_test_harness.cc">
 			<Option target="spongechecks"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_test_harness.hh">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_test_harness.hh">
 			<Option target="spongechecks"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/byte_stream_two_writes.cc">
+		<Unit filename="/home/bingbong/compiler/network/tests/byte_stream_two_writes.cc">
 			<Option target="byte_stream_two_writes"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/CMakeLists.txt">
+		<Unit filename="/home/bingbong/compiler/network/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/Doxyfile.in">
+		<Unit filename="/home/bingbong/compiler/network/etc/Doxyfile.in">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/build_defs.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/build_defs.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/build_type.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/build_type.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/cflags.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/cflags.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/clang_format.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/clang_format.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/clang_tidy.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/clang_tidy.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/cppcheck.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/cppcheck.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/doxygen.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/doxygen.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/etc/tests.cmake">
+		<Unit filename="/home/bingbong/compiler/network/etc/tests.cmake">
 			<Option virtualFolder="CMake Files\etc\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/libsponge/CMakeLists.txt">
+		<Unit filename="/home/bingbong/compiler/network/libsponge/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libsponge\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/apps/CMakeLists.txt">
+		<Unit filename="/home/bingbong/compiler/network/apps/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/tests/CMakeLists.txt">
+		<Unit filename="/home/bingbong/compiler/network/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\"/>
 		</Unit>
-		<Unit filename="/home/bingbong/network/doctests/CMakeLists.txt">
+		<Unit filename="/home/bingbong/compiler/network/doctests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doctests\"/>
 		</Unit>
 	</Project>

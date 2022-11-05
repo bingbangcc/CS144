@@ -1,6 +1,6 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/bingbong/network/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/bingbong/network -B /home/bingbong/network/cmake-build-debug"
--- The C compiler identification is GNU 10.3.0
--- The CXX compiler identification is GNU 10.3.0
+C:\Windows\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/bingbong/compiler/network/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/bingbong/compiler/network -B /home/bingbong/compiler/network/cmake-build-debug"
+-- The C compiler identification is GNU 8.4.0
+-- The CXX compiler identification is GNU 8.4.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -20,6 +20,7 @@ C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CM
 --     -DCMAKE_BUILD_TYPE=RelASan   -- full optimizations plus address and undefined-behavior sanitizers
 --     -DCMAKE_BUILD_TYPE=DebugASan -- debug plus sanitizers
 -- Found Doxygen: /usr/bin/doxygen (found version "1.8.17") found components: doxygen dot 
+-- Found clang-tidy version 1
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/bingbong/network/cmake-build-debug
+-- Build files have been written to: /home/bingbong/compiler/network/cmake-build-debug

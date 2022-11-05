@@ -3,31 +3,31 @@
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = "Sponge"
 PROJECT_BRIEF          = "CS144's user-space TCP library"
-PROJECT_LOGO           = "/home/bingbong/network/etc/sponge_small.png"
-INPUT                  = /home/bingbong/network
+PROJECT_LOGO           = "/home/bingbong/compiler/network/etc/sponge_small.png"
+INPUT                  = /home/bingbong/compiler/network
 RECURSIVE              = YES
-EXCLUDE                = /home/bingbong/network/etc /home/bingbong/network/build /home/bingbong/network/tests /home/bingbong/network/writeups
-OUTPUT_DIRECTORY       = "/home/bingbong/network/cmake-build-debug/doc"
+EXCLUDE                = /home/bingbong/compiler/network/etc /home/bingbong/compiler/network/build /home/bingbong/compiler/network/tests /home/bingbong/compiler/network/writeups
+OUTPUT_DIRECTORY       = "/home/bingbong/compiler/network/cmake-build-debug/doc"
 CASE_SENSE_NAMES       = NO
 SORT_BRIEF_DOCS        = YES
 SORT_MEMBERS_CTORS_1ST = YES
 SHOW_NAMESPACES        = NO
-USE_MDFILE_AS_MAINPAGE = /home/bingbong/network/README.md
+USE_MDFILE_AS_MAINPAGE = /home/bingbong/compiler/network/README.md
 SOURCE_BROWSER         = YES
 EXT_LINKS_IN_WINDOW    = YES
-INCLUDE_PATH           = /home/bingbong/network/libsponge
-TAGFILES               = "/home/bingbong/network/etc/cppreference-doxygen-web.tag.xml=https://en.cppreference.com/w/"
-TAGFILES              += "/home/bingbong/network/etc/linux-man-doxygen-web.tag.xml=https://man7.org/linux/man-pages/"
-TAGFILES              += "/home/bingbong/network/etc/rfc-doxygen-web.tag.xml=https://tools.ietf.org/html/"
+INCLUDE_PATH           = /home/bingbong/compiler/network/libsponge
+TAGFILES               = "/home/bingbong/compiler/network/etc/cppreference-doxygen-web.tag.xml=https://en.cppreference.com/w/"
+TAGFILES              += "/home/bingbong/compiler/network/etc/linux-man-doxygen-web.tag.xml=https://man7.org/linux/man-pages/"
+TAGFILES              += "/home/bingbong/compiler/network/etc/rfc-doxygen-web.tag.xml=https://tools.ietf.org/html/"
 HIDE_UNDOC_RELATIONS   = NO
 INLINE_GROUPED_CLASSES = YES
 INLINE_SIMPLE_STRUCTS  = YES
 HTML_COLORSTYLE_HUE    = 204
 HTML_COLORSTYLE_SAT    = 120
 HTML_COLORSTYLE_GAMMA  = 60
-HTML_EXTRA_STYLESHEET  = "/home/bingbong/network/etc/sponge_doxygen.css"
+HTML_EXTRA_STYLESHEET  = "/home/bingbong/compiler/network/etc/sponge_doxygen.css"
 GENERATE_LATEX         = NO
-EXAMPLE_PATH           = "/home/bingbong/network/doctests"
+EXAMPLE_PATH           = "/home/bingbong/compiler/network/doctests"
 
 # cmake detects whether dot is available
 HAVE_DOT               = YES

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bingbong/network/apps/webget.cc" "/home/bingbong/network/cmake-build-debug/apps/CMakeFiles/webget.dir/webget.cc.o"
+  "/home/bingbong/compiler/network/apps/webget.cc" "/home/bingbong/compiler/network/cmake-build-debug/apps/CMakeFiles/webget.dir/webget.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bingbong/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/home/bingbong/compiler/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

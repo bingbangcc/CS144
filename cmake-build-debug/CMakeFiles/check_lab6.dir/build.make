@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/network
+CMAKE_SOURCE_DIR = /home/bingbong/compiler/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/compiler/network/cmake-build-debug
 
 # Utility rule file for check_lab6.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 include CMakeFiles/check_lab6.dir/progress.make
 
 CMakeFiles/check_lab6:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing Lab 6..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing Lab 6..."
 	/usr/bin/ctest --output-on-failure --timeout 10 -R '^arp_|^router_'
 
 check_lab6: CMakeFiles/check_lab6
@@ -72,6 +72,6 @@ CMakeFiles/check_lab6.dir/clean:
 .PHONY : CMakeFiles/check_lab6.dir/clean
 
 CMakeFiles/check_lab6.dir/depend:
-	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/network /home/bingbong/network /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug/CMakeFiles/check_lab6.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bingbong/compiler/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/compiler/network /home/bingbong/compiler/network /home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/cmake-build-debug/CMakeFiles/check_lab6.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab6.dir/depend
 

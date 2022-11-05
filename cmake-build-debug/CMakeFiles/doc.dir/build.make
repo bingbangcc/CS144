@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bingbong/network
+CMAKE_SOURCE_DIR = /home/bingbong/compiler/network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bingbong/compiler/network/cmake-build-debug
 
 # Utility rule file for doc.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/bingbong/network/cmake-build-debug
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate docs using Doxygen"
-	/usr/bin/doxygen /home/bingbong/network/cmake-build-debug/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate docs using Doxygen"
+	/usr/bin/doxygen /home/bingbong/compiler/network/cmake-build-debug/Doxyfile
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /home/bingbong/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/network /home/bingbong/network /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug /home/bingbong/network/cmake-build-debug/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bingbong/compiler/network/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bingbong/compiler/network /home/bingbong/compiler/network /home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/cmake-build-debug/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

@@ -10,9 +10,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../libsponge/util"
-  "../libsponge/tcp_helpers"
-  "../libsponge"
+  "../src/util"
+  "../src/tcp_helpers"
+  "../src"
   )
 
 # Targets to which this target links.

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/bingbong/compiler/network/cmake-build-debug
 include CMakeFiles/tidy_quiet_util__tun.cc.dir/progress.make
 
 CMakeFiles/tidy_quiet_util__tun.cc:
-	clang-tidy -checks='*,-fuchsia-*,-hicpp-signed-bitwise,-google-build-using-namespace,-android*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-google-runtime-references,-readability-avoid-const-params-in-decls,-llvm-header-guard' -header-filter=.* -p=/home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/libsponge/util/tun.cc 2>/dev/null
+	clang-tidy -checks='*,-fuchsia-*,-hicpp-signed-bitwise,-google-build-using-namespace,-android*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-google-runtime-references,-readability-avoid-const-params-in-decls,-llvm-header-guard' -header-filter=.* -p=/home/bingbong/compiler/network/cmake-build-debug /home/bingbong/compiler/network/src/util/tun.cc 2>/dev/null
 
 tidy_quiet_util__tun.cc: CMakeFiles/tidy_quiet_util__tun.cc
 tidy_quiet_util__tun.cc: CMakeFiles/tidy_quiet_util__tun.cc.dir/build.make

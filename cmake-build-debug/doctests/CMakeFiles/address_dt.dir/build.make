@@ -79,7 +79,7 @@ address_dt_EXTERNAL_OBJECTS =
 
 doctests/address_dt: doctests/CMakeFiles/address_dt.dir/address_dt.cc.o
 doctests/address_dt: doctests/CMakeFiles/address_dt.dir/build.make
-doctests/address_dt: libsponge/libsponge.a
+doctests/address_dt: src/libsponge.a
 doctests/address_dt: /usr/lib/x86_64-linux-gnu/libpthread.so
 doctests/address_dt: doctests/CMakeFiles/address_dt.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable address_dt"

@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bingbong/compiler/network/cmake-build-debug/libsponge/cmake_install.cmake")
+  include("/home/bingbong/compiler/network/cmake-build-debug/src/cmake_install.cmake")
   include("/home/bingbong/compiler/network/cmake-build-debug/apps/cmake_install.cmake")
   include("/home/bingbong/compiler/network/cmake-build-debug/tests/cmake_install.cmake")
   include("/home/bingbong/compiler/network/cmake-build-debug/doctests/cmake_install.cmake")

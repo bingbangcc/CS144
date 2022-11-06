@@ -4,6 +4,10 @@
 libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o: ../libsponge/byte_stream.cc
 libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o: ../libsponge/byte_stream.hh
 
+libsponge/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../libsponge/byte_stream.hh
+libsponge/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../libsponge/stream_reassembler.cc
+libsponge/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../libsponge/stream_reassembler.hh
+
 libsponge/CMakeFiles/sponge.dir/util/address.cc.o: ../libsponge/util/address.cc
 libsponge/CMakeFiles/sponge.dir/util/address.cc.o: ../libsponge/util/address.hh
 libsponge/CMakeFiles/sponge.dir/util/address.cc.o: ../libsponge/util/util.hh

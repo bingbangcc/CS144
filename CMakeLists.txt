@@ -12,11 +12,11 @@ include (etc/clang_format.cmake)
 include (etc/clang_tidy.cmake)
 include (etc/cppcheck.cmake)
 
-include_directories ("${PROJECT_SOURCE_DIR}/libsponge/util")
-include_directories ("${PROJECT_SOURCE_DIR}/libsponge/tcp_helpers")
-include_directories ("${PROJECT_SOURCE_DIR}/libsponge")
+include_directories ("${PROJECT_SOURCE_DIR}/src/util")
+include_directories ("${PROJECT_SOURCE_DIR}/src/tcp_helpers")
+include_directories ("${PROJECT_SOURCE_DIR}/src")
 
-add_subdirectory ("${PROJECT_SOURCE_DIR}/libsponge")
+add_subdirectory ("${PROJECT_SOURCE_DIR}/src")
 
 add_subdirectory ("${PROJECT_SOURCE_DIR}/apps")
 
@@ -25,3 +25,4 @@ add_subdirectory ("${PROJECT_SOURCE_DIR}/tests")
 add_subdirectory ("${PROJECT_SOURCE_DIR}/doctests")
 
 include (etc/tests.cmake)
+set(CMAKE_BUILD_TYPE Debug)

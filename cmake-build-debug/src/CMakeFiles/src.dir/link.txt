@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/byte_stream.cc.o CMakeFiles/src.dir/stream_reassembler.cc.o CMakeFiles/src.dir/util/address.cc.o CMakeFiles/src.dir/util/buffer.cc.o CMakeFiles/src.dir/util/eventloop.cc.o CMakeFiles/src.dir/util/file_descriptor.cc.o CMakeFiles/src.dir/util/parser.cc.o CMakeFiles/src.dir/util/socket.cc.o CMakeFiles/src.dir/util/tun.cc.o CMakeFiles/src.dir/util/util.cc.o
+/usr/bin/ranlib libsrc.a

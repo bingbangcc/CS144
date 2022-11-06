@@ -79,7 +79,7 @@ socket_dt_EXTERNAL_OBJECTS =
 
 doctests/socket_dt: doctests/CMakeFiles/socket_dt.dir/socket_dt.cc.o
 doctests/socket_dt: doctests/CMakeFiles/socket_dt.dir/build.make
-doctests/socket_dt: libsponge/libsponge.a
+doctests/socket_dt: src/libsponge.a
 doctests/socket_dt: /usr/lib/x86_64-linux-gnu/libpthread.so
 doctests/socket_dt: doctests/CMakeFiles/socket_dt.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable socket_dt"

@@ -10,14 +10,14 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../libsponge/util"
-  "../libsponge/tcp_helpers"
-  "../libsponge"
+  "../src/util"
+  "../src/tcp_helpers"
+  "../src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bingbong/compiler/network/cmake-build-debug/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

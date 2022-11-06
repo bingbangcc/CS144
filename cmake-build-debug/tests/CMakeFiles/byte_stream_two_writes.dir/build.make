@@ -80,7 +80,7 @@ byte_stream_two_writes_EXTERNAL_OBJECTS =
 tests/byte_stream_two_writes: tests/CMakeFiles/byte_stream_two_writes.dir/byte_stream_two_writes.cc.o
 tests/byte_stream_two_writes: tests/CMakeFiles/byte_stream_two_writes.dir/build.make
 tests/byte_stream_two_writes: tests/libspongechecks.a
-tests/byte_stream_two_writes: libsponge/libsponge.a
+tests/byte_stream_two_writes: src/libsponge.a
 tests/byte_stream_two_writes: tests/CMakeFiles/byte_stream_two_writes.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable byte_stream_two_writes"
 	cd /home/bingbong/compiler/network/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/byte_stream_two_writes.dir/link.txt --verbose=$(VERBOSE)

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../libsponge/byte_stream.hh
+../src/byte_stream.hh
 string
 -
 deque
 -
 
-../libsponge/util/util.hh
+../src/util/util.hh
 algorithm
 -
 cerrno
@@ -34,19 +34,19 @@ system_error
 vector
 -
 
-/home/bingbong/network/tests/byte_stream_test_harness.cc
+/home/bingbong/compiler/network/tests/byte_stream_test_harness.cc
 byte_stream_test_harness.hh
-/home/bingbong/network/tests/byte_stream_test_harness.hh
+/home/bingbong/compiler/network/tests/byte_stream_test_harness.hh
 memory
 -
 sstream
 -
 
-/home/bingbong/network/tests/byte_stream_test_harness.hh
+/home/bingbong/compiler/network/tests/byte_stream_test_harness.hh
 byte_stream.hh
-/home/bingbong/network/tests/byte_stream.hh
+/home/bingbong/compiler/network/tests/byte_stream.hh
 util.hh
-/home/bingbong/network/tests/util.hh
+/home/bingbong/compiler/network/tests/util.hh
 exception
 -
 initializer_list

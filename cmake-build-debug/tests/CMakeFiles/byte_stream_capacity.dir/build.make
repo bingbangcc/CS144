@@ -80,7 +80,7 @@ byte_stream_capacity_EXTERNAL_OBJECTS =
 tests/byte_stream_capacity: tests/CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o
 tests/byte_stream_capacity: tests/CMakeFiles/byte_stream_capacity.dir/build.make
 tests/byte_stream_capacity: tests/libspongechecks.a
-tests/byte_stream_capacity: libsponge/libsponge.a
+tests/byte_stream_capacity: src/libsponge.a
 tests/byte_stream_capacity: tests/CMakeFiles/byte_stream_capacity.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bingbong/compiler/network/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable byte_stream_capacity"
 	cd /home/bingbong/compiler/network/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/byte_stream_capacity.dir/link.txt --verbose=$(VERBOSE)

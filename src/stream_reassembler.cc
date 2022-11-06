@@ -40,9 +40,16 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
     real_len = min(real_data.size(), _capacity + next_index_ - real_index);
     if (real_len == 0) return;
     // 插入待处理的切片，其key是该str的(begin_index, end_index)，value是对应的str
-    unassenbled_strs_.push_back({real_index, real_index+real_len-1, data.substr(real_index-index, real_len)});
+    // 这里实现了两种办法
+    // 1. 生成一个node，根据二分查找插入到list中第一个元素其begin比当前begin大的位置
+    // 2. 直接push到list末尾，然后对list进行sort
+    // 测试的时候第一个办法比第二个办法快0.15秒左右
+    node temp_node{real_index, real_index+real_len-1, data.substr(real_index-index, real_len)};
+//    unassenbled_strs_.push_back({real_index, real_index+real_len-1, data.substr(real_index-index, real_len)});
     // 接下来对map里的数据进行处理以使得所有区间都没有重叠
-    unassenbled_strs_.sort();
+    auto iter = std::lower_bound(unassenbled_strs_.begin(), unassenbled_strs_.end(), temp_node);
+    unassenbled_strs_.insert(iter, temp_node);
+//    unassenbled_strs_.sort();
     std::list<node> temp;
     for (auto& c : unassenbled_strs_) {
         if (temp.empty() || c.begin_ > temp.back().end_) {

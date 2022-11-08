@@ -45,7 +45,6 @@ void TCPReceiver::segment_received(const TCPSegment &seg) {
     std::string data = seg.payload().copy();
     // 这里传进去fin只是说明已经从发送方接收到所有数据，但有的数据可能还没组装，因此并不是说fin传进来就要将确认号绝对序号+1
     _reassembler.push_substring(data, stream_index, tcp_header.fin);
-
 }
 
 optional<WrappingInt32> TCPReceiver::ackno() const {

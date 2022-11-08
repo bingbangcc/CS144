@@ -298,6 +298,33 @@ tcp_receiver.cc.s:
 	cd /home/bingbong/compiler/network/cmake-build-debug && $(MAKE) -f src/CMakeFiles/sponge.dir/build.make src/CMakeFiles/sponge.dir/tcp_receiver.cc.s
 .PHONY : tcp_receiver.cc.s
 
+tcp_sender.o: tcp_sender.cc.o
+
+.PHONY : tcp_sender.o
+
+# target to build an object file
+tcp_sender.cc.o:
+	cd /home/bingbong/compiler/network/cmake-build-debug && $(MAKE) -f src/CMakeFiles/sponge.dir/build.make src/CMakeFiles/sponge.dir/tcp_sender.cc.o
+.PHONY : tcp_sender.cc.o
+
+tcp_sender.i: tcp_sender.cc.i
+
+.PHONY : tcp_sender.i
+
+# target to preprocess a source file
+tcp_sender.cc.i:
+	cd /home/bingbong/compiler/network/cmake-build-debug && $(MAKE) -f src/CMakeFiles/sponge.dir/build.make src/CMakeFiles/sponge.dir/tcp_sender.cc.i
+.PHONY : tcp_sender.cc.i
+
+tcp_sender.s: tcp_sender.cc.s
+
+.PHONY : tcp_sender.s
+
+# target to generate assembly for a file
+tcp_sender.cc.s:
+	cd /home/bingbong/compiler/network/cmake-build-debug && $(MAKE) -f src/CMakeFiles/sponge.dir/build.make src/CMakeFiles/sponge.dir/tcp_sender.cc.s
+.PHONY : tcp_sender.cc.s
+
 util/address.o: util/address.cc.o
 
 .PHONY : util/address.o
@@ -569,6 +596,9 @@ help:
 	@echo "... tcp_receiver.o"
 	@echo "... tcp_receiver.i"
 	@echo "... tcp_receiver.s"
+	@echo "... tcp_sender.o"
+	@echo "... tcp_sender.i"
+	@echo "... tcp_sender.s"
 	@echo "... util/address.o"
 	@echo "... util/address.i"
 	@echo "... util/address.s"

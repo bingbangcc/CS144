@@ -17,6 +17,11 @@ using namespace std;
   * 序号：指的是在tcp报文头里标识的实际数据流中某字节的索引，特点是uint32，有循环，其标志的是相对isn的位置关系
   * 整个流程是：tcp报文头里存储的是序号，而_reassembler进行组装所使用的是流序号，绝对序号是连接二者的桥梁
   * 序号和绝对序号只是用来标识流数据各个字节所对应的索引位置，其并未是在流数据的头尾增加了某些字段，数据自始至终都只有那些
+  * 例子：
+  * 序号:    0 1 2 0 1 2
+  * 绝对序号：0 1 2 3 4 5
+  * 流序号：    0 1 2 3
+  * 流数据：    a b c d
   * */
 void TCPReceiver::segment_received(const TCPSegment &seg) {
     TCPHeader tcp_header = seg.header();

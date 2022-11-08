@@ -1,1 +1,9 @@
 C:\Windows\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/bingbong/compiler/network/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /home/bingbong/compiler/network -B /home/bingbong/compiler/network/cmake-build-debug"
+--   NOTE: You can choose a build type by calling cmake with one of:
+--     -DCMAKE_BUILD_TYPE=Release   -- full optimizations
+--     -DCMAKE_BUILD_TYPE=Debug     -- better debugging experience in gdb
+--     -DCMAKE_BUILD_TYPE=RelASan   -- full optimizations plus address and undefined-behavior sanitizers
+--     -DCMAKE_BUILD_TYPE=DebugASan -- debug plus sanitizers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bingbong/compiler/network/cmake-build-debug

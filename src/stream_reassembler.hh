@@ -82,6 +82,7 @@ class StreamReassembler {
     //! \returns `true` if no substrings are waiting to be assembled
     bool empty() const;
     void judge_eof(const std::string &data, const size_t index, const bool eof);
+    uint64_t next_index() const { return next_index_; }
 };
 
 #endif  // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH

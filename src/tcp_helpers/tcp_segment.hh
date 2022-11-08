@@ -30,6 +30,7 @@ class TCPSegment {
 
     //! \brief Segment's length in sequence space
     //! \note Equal to payload length plus one byte if SYN is set, plus one byte if FIN is set
+    // 这里返回的不是报文段所持有数据的长度，而是该报文段所占用序号的个数，包括了syn和fin所占据的序号
     size_t length_in_sequence_space() const;
 };
 

@@ -44,6 +44,7 @@ void TCPReceiver::segment_received(const TCPSegment &seg) {
     // (syn)只占用一个序号，并不是真的存储在数据段，因此data就是该段的数据部分
     std::string data = seg.payload().copy();
     // 这里传进去fin只是说明已经从发送方接收到所有数据，但有的数据可能还没组装，因此并不是说fin传进来就要将确认号绝对序号+1
+    // 第一个syn报文，其data是空的，直接调用下面的函数也可以得到正确的执行结果
     _reassembler.push_substring(data, stream_index, tcp_header.fin);
 }
 

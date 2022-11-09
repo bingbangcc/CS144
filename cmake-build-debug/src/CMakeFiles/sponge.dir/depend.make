@@ -8,6 +8,55 @@ src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/byte_stream.hh
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/stream_reassembler.cc
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/stream_reassembler.hh
 
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_header.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_header.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_header.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_header.cc.o: ../src/tcp_helpers/tcp_header.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_header.cc.o: ../src/tcp_helpers/tcp_header.hh
+
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/util/util.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/tcp_helpers/tcp_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/tcp_helpers/tcp_segment.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/tcp_helpers/tcp_segment.hh
+
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/byte_stream.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/stream_reassembler.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_config.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_segment.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_receiver.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_sender.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/util/address.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_state.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_state.hh
+
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/tcp_helpers/tcp_header.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/tcp_helpers/tcp_segment.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/byte_stream.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/stream_reassembler.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/tcp_receiver.cc
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/tcp_receiver.hh
+src/CMakeFiles/sponge.dir/tcp_receiver.cc.o: ../src/wrapping_integers.hh
+
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/tcp_helpers/tcp_config.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/tcp_helpers/tcp_header.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/tcp_helpers/tcp_segment.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/util/address.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/byte_stream.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/tcp_sender.cc
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/tcp_sender.hh
+src/CMakeFiles/sponge.dir/tcp_sender.cc.o: ../src/wrapping_integers.hh
+
 src/CMakeFiles/sponge.dir/util/address.cc.o: ../src/util/address.cc
 src/CMakeFiles/sponge.dir/util/address.cc.o: ../src/util/address.hh
 src/CMakeFiles/sponge.dir/util/address.cc.o: ../src/util/util.hh
@@ -45,4 +94,7 @@ src/CMakeFiles/sponge.dir/util/tun.cc.o: ../src/util/util.hh
 
 src/CMakeFiles/sponge.dir/util/util.cc.o: ../src/util/util.cc
 src/CMakeFiles/sponge.dir/util/util.cc.o: ../src/util/util.hh
+
+src/CMakeFiles/sponge.dir/wrapping_integers.cc.o: ../src/wrapping_integers.cc
+src/CMakeFiles/sponge.dir/wrapping_integers.cc.o: ../src/wrapping_integers.hh
 

@@ -27,6 +27,14 @@ uint64_t TCPSender::bytes_in_flight() const {
     return bytes_in_flight_;
 }
 
+/*
+ * 对于发送方来说，其需要从流缓冲区读取流数据部分，并将该数据封装成段
+ * 此后其不再面向数据，即不涉及流序号，其面向的都是绝对序号以及序号
+ * 发送方考虑的都是绝对序号的范围问题，这里的window_size指的也是可发送的序号个数
+ * 其实最顶层来说就是要保证seg.length_in_sequence_space()要小于window_size
+ * 这里的序号是包括syn和fin这两个序号的。
+ * */
+
 void TCPSender::fill_window() {
     // 这里都是从字节流中读取数据构造新的报文段，重发的报文不是在这，重发的可以直接访问unfinished_segments_来获取
     // 如果该报文是syn报文，则不带数据段，并设置相应头，发送完直接返回
@@ -40,6 +48,11 @@ void TCPSender::fill_window() {
         _segments_out.push(seg);
         unfinished_segments_.push(seg);
         bytes_in_flight_++;
+
+        // 修改时钟
+//        time_count_ = 0;
+//        time_rto_ = _initial_retransmission_timeout;
+//        consecutive_retransmission_times_ = 0;
         return;
     }
     // 接下来处理数据部分的报文段
@@ -55,7 +68,9 @@ void TCPSender::fill_window() {
         seg.header().seqno = next_seqno();
         string data = _stream.read(stream_size);
         seg.payload() = Buffer(std::move(data));
-        if (_stream.eof()) {
+        // 这里需要注意，如果该窗口已经被数据序号给填满了，则不能再写入fin占用一个序号，这样会溢出
+        // 而应该发送一个空段文来传送fin
+        if (_stream.eof() && cur_window_size_ > seg.payload().size()) {
             seg.header().fin = true;
             set_fin_ = true;
         }
@@ -68,6 +83,16 @@ void TCPSender::fill_window() {
         bytes_in_flight_ += seg.length_in_sequence_space();
         _segments_out.push(seg);
         unfinished_segments_.push(seg);
+
+        /*
+         * 这里不需要修改时钟，因为时钟都是在ack那里进行更新处理，在tick那里进行超时重传
+         * 如果在这里进行更新，则时钟的性质变成了，记录最新发送的报文的时间，而不再是最老发送的报文的时间
+         * 这样会导致无法重传之前已经超时的报文
+         * */
+        // 修改时钟
+//        time_count_ = 0;
+//        time_rto_ = _initial_retransmission_timeout;
+//        consecutive_retransmission_times_ = 0;
     }
 }
 

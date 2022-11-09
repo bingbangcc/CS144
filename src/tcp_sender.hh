@@ -36,7 +36,7 @@ class TCPSender {
     // 发送了，但还未确认的段
     std::queue<TCPSegment> unfinished_segments_{};
     // 接收方的window长度，发送方发送的报文长度不能超过该窗口，这里窗口大小指的是实际数据部分的长度，而不是序号的个数
-    unsigned int window_size_ = 0;
+    unsigned int window_size_ = 1;
     // 已经发送但未ack的字节数量
     uint64_t bytes_in_flight_ = 0;
     // 是否已发syn报文

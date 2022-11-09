@@ -33,13 +33,23 @@ class TCPSender {
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
 
-    unsigned int retransmission_times_ = 0;
+
     // 发送了，但还未确认的段
     std::queue<TCPSegment> unfinished_segments_{};
+    // 接收方的window长度，发送方发送的报文长度不能超过该窗口，这里窗口大小指的是实际数据部分的长度，而不是序号的个数
     unsigned int window_size_ = 1;
+    // 已经发送但未ack的字节数量
     uint64_t bytes_in_flight_ = 0;
+    // 是否已发syn报文
     bool set_syn_ = false;
+    // 是否已发fin报文
     bool set_fin_ = false;
+
+    // 时钟记录部分
+    // 已经流失的时间长度
+    unsigned int time_count_ = 0;
+    // 目前的rto长度，即重传时间，每次重传都会使该值double，在收到ack包的时候置为初始值
+    unsigned int retransmission_times_ = 0;
 
   public:
     //! Initialize a TCPSender

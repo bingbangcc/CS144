@@ -32,7 +32,13 @@ uint64_t TCPSender::bytes_in_flight() const {
  * 此后其不再面向数据，即不涉及流序号，其面向的都是绝对序号以及序号
  * 发送方考虑的都是绝对序号的范围问题，这里的window_size指的也是可发送的序号个数
  * 其实最顶层来说就是要保证seg.length_in_sequence_space()要小于window_size
- * 这里的序号是包括syn和fin这两个序号的。
+ * 这里的序号窗口的大小是包括syn和fin这两个序号的。
+ *
+ * ps：对于receiver来说，其看到的只是自己缓冲区的可用空间，因为其并不知道sender什么时候发送fin和syn报文
+ * 因此对receiver来说其决定不了序号的window，其只能发送缓冲区的可用空间。
+ * 而对于sender来说，发送syn和fin是其责任，因此其在发送数据之外还需要处理syn和fin，因此其面向的是序号window。
+ * 而且其实因为syn报文并不携带数据而只占用一个序号，之后的数据报文携带数据但没有syn
+ * 因此在不涉及syn和fin的时候发送的缓冲区大小window_size其实就是sender这里的序号窗口
  * */
 
 void TCPSender::fill_window() {

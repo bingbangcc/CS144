@@ -33,8 +33,8 @@ void TCPReceiver::segment_received(const TCPSegment &seg) {
         isn_ = tcp_header.seqno;
     }
 
-    // bytes_written是已经写入的个数，其索引是个数-1
-    uint64_t checkout = _reassembler.stream_out().bytes_written() - 1;
+    // bytes_written是已经写入的个数
+    uint64_t checkout = _reassembler.stream_out().bytes_written();
     // 确定该段里报文的绝对索引,绝对序列号里包含了流最前面的syn的一个序号
     uint64_t obsolute_index = unwrap(tcp_header.seqno, isn_, checkout);
     // 确定流索引，如果当前是带有(syn)的则流序号为0，否则是绝对序号-1

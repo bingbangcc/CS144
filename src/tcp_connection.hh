@@ -5,7 +5,7 @@
 #include "tcp_receiver.hh"
 #include "tcp_sender.hh"
 #include "tcp_state.hh"
-
+using State = TCPState::State;
 //! \brief A complete endpoint of a TCP connection
 class TCPConnection {
   private:
@@ -15,12 +15,12 @@ class TCPConnection {
 
     //! outbound queue of segments that the TCPConnection wants sent
     std::queue<TCPSegment> _segments_out{};
-
+    size_t time_since_last_segment_received_{0};
     //! Should the TCPConnection stay active (and keep ACKing)
     //! for 10 * _cfg.rt_timeout milliseconds after both streams have ended,
     //! in case the remote TCPConnection doesn't know we've received its whole stream?
     bool _linger_after_streams_finish{true};
-
+    bool is_alive_{false};
   public:
     //! \name "Input" interface for the writer
     //!@{
@@ -94,6 +94,9 @@ class TCPConnection {
     TCPConnection(const TCPConnection &other) = delete;
     TCPConnection &operator=(const TCPConnection &other) = delete;
     //!@}
+    void send_segments();
+    void set_rst_state(bool send_rst_seg);
+    State get_tcp_state();
 };
 
 #endif  // SPONGE_LIBSPONGE_TCP_FACTORED_HH

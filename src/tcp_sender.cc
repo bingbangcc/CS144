@@ -109,11 +109,12 @@ void TCPSender::fill_window() {
 // 数据部分的window_size小一点，但并不影响实际功能的实现，因为sender发送的数据可能少一点
 // 不会导致receiver缓冲区异常等情况，而且省去了考虑syn和fin的麻烦
 void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_size) {
-    window_size_ = window_size;
     // 确认号的绝对序号
     uint64_t ackno_abs = unwrap(ackno, _isn, _next_seqno);
     // 对还未发送的字节进行确认，因此直接返回
+    window_size_ = window_size;
     if (ackno_abs > _next_seqno) {
+        fill_window();
         return;
     }
     // 将所有被该ack号完全累计确认的段从unfinished_segments_中pop
@@ -122,7 +123,8 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
         TCPSegment temp_seg = unfinished_segments_.front();
         uint64_t seq_abs = unwrap(temp_seg.header().seqno, _isn, _next_seqno);
         // 该段所包含的最后一个序号
-        seq_abs += temp_seg.length_in_sequence_space()-1;
+        if (temp_seg.length_in_sequence_space() !=  0)
+            seq_abs += temp_seg.length_in_sequence_space()-1;
         // 如果该段已经被完全确认，则将该段从queue里pop，并且减少当前已经发送但未被确认的序列号数量
         if (ackno_abs > seq_abs) {
             unfinished_segments_.pop();

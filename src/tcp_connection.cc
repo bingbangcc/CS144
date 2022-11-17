@@ -34,6 +34,10 @@ State TCPConnection::get_tcp_state() {
         sender == TCPSenderStateSummary::SYN_ACKED && !_linger_after_streams_finish) return State::CLOSE_WAIT;
     if (receiver == TCPReceiverStateSummary::FIN_RECV &&
         sender == TCPSenderStateSummary::FIN_SENT && !_linger_after_streams_finish) return State::LAST_ACK;
+//    if (receiver == TCPReceiverStateSummary::FIN_RECV &&
+//        sender == TCPSenderStateSummary::SYN_ACKED) return State::CLOSE_WAIT;
+//    if (receiver == TCPReceiverStateSummary::FIN_RECV &&
+//        sender == TCPSenderStateSummary::FIN_SENT) return State::LAST_ACK;
     if (receiver == TCPReceiverStateSummary::FIN_RECV &&
         sender == TCPSenderStateSummary::FIN_SENT) return State::CLOSING;
     if (receiver == TCPReceiverStateSummary::SYN_RECV &&
@@ -51,9 +55,9 @@ State TCPConnection::get_tcp_state() {
 
 void TCPConnection::send_segments() {
     // 如果当前没有要发送的报文段，那就发送一个空包进行keep-alive
-    if (_sender.segments_out().empty()) {
-        _sender.send_empty_segment();
-    }
+//    if (_sender.segments_out().empty()) {
+//        _sender.send_empty_segment();
+//    }
     while (!_sender.segments_out().empty()) {
         auto seg = _sender.segments_out().front();
         _sender.segments_out().pop();
@@ -64,11 +68,42 @@ void TCPConnection::send_segments() {
         }
         _segments_out.push(seg);
     }
+
+    // 如果已经接收结束
+    if (_receiver.stream_out().input_ended()) {
+        // 如果发送没有结束，那么是服务器端，不需要计时器
+        if (!_sender.stream_in().eof()) {
+            _linger_after_streams_finish = false;
+        }
+        // 如果发送已经结束。
+        // 如果是服务端，则可以直接结束
+        // 如果是客户端，则超过计时间隔可以结束
+        else if (_sender.bytes_in_flight() == 0) {
+            if (!_linger_after_streams_finish || time_since_last_segment_received_ >= 10*_cfg.rt_timeout) {
+                is_alive_ = false;
+            }
+        }
+    }
+
+//    if (_sender.stream_in().eof())
+    // 如果time_wait已经过了最大等待时间，则set_rst
+//    State tcp_stat = get_tcp_state();
+//    if (tcp_stat == State::TIME_WAIT) {
+//        if (time_since_last_segment_received_ > 10*_cfg.rt_timeout) {
+//            //             set_rst_state(false);
+//            is_alive_ = false;
+//            return;
+//        }
+//    }
 }
 
+// 关键在于，每当收到一个报文都要进行ack，如果当前sender已经没有数据要发送，那么就需要发送一个空包
+// 如果接收到一个空包，那么说明对方的sender目前没有数据进行发送，如果seg.length_in_sequence_space() > 0
+// 那么需要对该报文进行ack，如果seg.length_in_sequence_space() == 0那么就说明这个报文仅仅是对你已发送得以一个报文的
+// ack，是不需要对其发送一个空包进行ack的。
+// 空包只是进行ack的手段，收到空包的话不需要进行回复
 // 分不同的阶段进行处理
 void TCPConnection::segment_received(const TCPSegment &seg) {
-    if (!active()) return;
     time_since_last_segment_received_ = 0;
     // 如果收到rst报文，则直接中断该连接
     if (seg.header().rst) {
@@ -80,18 +115,22 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
     State tcp_state = get_tcp_state();
     TCPHeader header = seg.header();
     // 在LISTEN阶段收到对方的SYN报文，与对面建立连接，则本方为服务端
-    if (tcp_state == State::LISTEN) {
+    if (tcp_state == State::LISTEN || tcp_state == State::CLOSED) {
         if (header.syn) {
+            _receiver.segment_received(seg);
             connect();
-            _linger_after_streams_finish = false;
+//            _linger_after_streams_finish = false;
         }
     }
     // 本机作为客户端主动发送SYN报文
     else if (tcp_state == State::SYN_SENT) {
         // 服务器应发送SYN+ACK报文
-        if (header.ack && header.syn) {
+        if (header.syn) {
             _receiver.segment_received(seg);
-            _sender.ack_received(header.ackno, header.win);
+            if (header.ack) {
+                _sender.ack_received(header.ackno, header.win);
+            }
+            _sender.send_empty_segment();
             send_segments();
         }
     }
@@ -100,38 +139,75 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
         if (header.ack) {
             _sender.ack_received(header.ackno, header.win);
         }
+
+//        send_segments();
+    }
+    else if (tcp_state == State::ESTABLISHED) {
+        _receiver.segment_received(seg);
+        if (header.ack) {
+            _sender.ack_received(header.ackno, header.win);
+        }
+        if (seg.length_in_sequence_space() > 0) {
+            _sender.send_empty_segment();
+        }
         send_segments();
+
+        // 如果receiver已经结束但sender还没结束，则该方为服务端，不需要经过计时阶段
+
     }
     // 服务器端已经收到了FIN报文
-    else if (tcp_state == State::CLOSE_WAIT) {
-        // 之前的ACK报文丢失
+//    else if (tcp_state == State::CLOSE_WAIT) {
+//        _receiver.segment_received(seg);
+//        if (header.ack) {
+//            _sender.ack_received(header.ackno, header.win);
+//        }
+////        if (_sender.segments_out().empty()) {
+////            _sender.send_empty_segment();
+////        }
+//        send_segments();
+//    }
+//    else if (tcp_state == State::LAST_ACK) {
+//        _receiver.segment_received(seg);
+//        if (header.ack) {
+//            _sender.ack_received(header.ackno, header.win);
+//        }
+//        // 如果是对最后一个字节的ack，则关闭tcp
+////        if (_sender.bytes_in_flight() == 0) {
+////            is_alive_ = false;
+////        }
+//        send_segments();
+//    }
+    else if (tcp_state == State::FIN_WAIT_1) {
+        _receiver.segment_received(seg);
+        if (header.ack) {
+            _sender.ack_received(header.ackno, header.win);
+        }
+        // 如果收到对面的FIN报文，则进入FIN_WAIT_2状态
         if (header.fin) {
+            _sender.send_empty_segment();
+        }
+        send_segments();
+    }
+    // 此时sender已经没有数据要发送，因此如果要对seg进行ack都必须发送一个空包
+    else if (tcp_state == State::FIN_WAIT_2) {
+        _receiver.segment_received(seg);
+        if (header.ack) {
+            _sender.ack_received(header.ackno, header.win);
+        }
+        _sender.send_empty_segment();
+        // 如果收到fin报文，则应该发送一个空ack报文
+        send_segments();
+    }
+    else if (tcp_state == State::TIME_WAIT) {
+        if (header.fin) {
+            _receiver.segment_received(seg);
+            if (header.ack) {
+                _sender.ack_received(header.ackno, header.win);
+            }
             _sender.send_empty_segment();
             send_segments();
             return;
         }
-        _receiver.segment_received(seg);
-        if (header.ack) {
-            _sender.ack_received(header.ackno, header.win);
-        }
-        send_segments();
-    }
-    else if (tcp_state == State::LAST_ACK) {
-        _receiver.segment_received(seg);
-        if (header.ack) {
-            _sender.ack_received(header.ackno, header.win);
-        }
-        is_alive_ = false;
-        return;
-    }
-    else if (tcp_state == State::FIN_WAIT_1) {
-
-    }
-    else if (tcp_state == State::FIN_WAIT_2) {
-
-    }
-    else if (tcp_state == State::TIME_WAIT) {
-
     }
     // 如果是正常连接阶段，则直接将报文段相应部分分发给sender和receiver
     else {
@@ -139,6 +215,7 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
         if (seg.header().ack) {
             _sender.ack_received(seg.header().seqno, seg.header().win);
         }
+        _sender.fill_window();
         send_segments();
     }
 }
@@ -146,6 +223,7 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
 bool TCPConnection::active() const { return is_alive_; }
 
 size_t TCPConnection::write(const string &data) {
+    if (data.size() == 0) return 0;
     size_t write_size = _sender.stream_in().write(data);
     _sender.fill_window();
     send_segments();
@@ -154,7 +232,6 @@ size_t TCPConnection::write(const string &data) {
 
 //! \param[in] ms_since_last_tick number of milliseconds since the last call to this method
 void TCPConnection::tick(const size_t ms_since_last_tick) {
-    if (!active()) return;
      time_since_last_segment_received_ += ms_since_last_tick;
      // 更新时间戳，如果有需要则重复相应的报文段
      _sender.tick(ms_since_last_tick);
@@ -164,14 +241,16 @@ void TCPConnection::tick(const size_t ms_since_last_tick) {
          return;
      }
      send_segments();
-     // 如果time_wait已经过了最大等待时间，则set_rst
-     State tcp_stat = get_tcp_state();
-     if (tcp_stat == State::TIME_WAIT) {
-         if (time_since_last_segment_received_ > 10*_cfg.rt_timeout) {
-             set_rst_state(false);
-             return;
-         }
-     }
+
+//      如果time_wait已经过了最大等待时间，则set_rst
+//         State tcp_stat = get_tcp_state();
+//         if (tcp_stat == State::TIME_WAIT) {
+//             if (time_since_last_segment_received_ > 10*_cfg.rt_timeout) {
+//                 //             set_rst_state(false);
+//                 is_alive_ = false;
+//                 return;
+//             }
+//         }
 }
 
 void TCPConnection::end_input_stream() {
@@ -182,7 +261,7 @@ void TCPConnection::end_input_stream() {
 
 void TCPConnection::connect() {
     _sender.fill_window();
-    is_alive_ = true;
+//    is_alive_ = true;
     send_segments();
 }
 
@@ -193,7 +272,7 @@ void TCPConnection::set_rst_state(bool send_rst_seg) {
         _segments_out.push(seg);
     }
     is_alive_ = false;
-    _linger_after_streams_finish = false;
+//    _linger_after_streams_finish = false;
     _receiver.stream_out().set_error();
     _sender.stream_in().set_error();
 }

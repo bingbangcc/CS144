@@ -356,7 +356,8 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
         // 这说明服务端重发了fin报文
         if (header.fin) {
             _receiver.segment_received(seg);
-            // 没有ack，不用sender的分析
+            // 有ack，需要传给sender分析
+            _sender.ack_received(header.ackno, header.win);
             _sender.send_empty_segment();
             send_segments();
         }

@@ -52,6 +52,8 @@ class TCPSender {
     // 重传的次数
     unsigned int consecutive_retransmission_times_ = 0;
 
+    bool retransmissions_timer_running_ = false;
+
   public:
     //! Initialize a TCPSender
     TCPSender(const size_t capacity = TCPConfig::DEFAULT_CAPACITY,

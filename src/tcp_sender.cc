@@ -44,16 +44,17 @@ uint64_t TCPSender::bytes_in_flight() const {
 void TCPSender::fill_window() {
     // 这里都是从字节流中读取数据构造新的报文段，重发的报文不是在这，重发的可以直接访问unfinished_segments_来获取
     // 如果该报文是syn报文，则不带数据段，并设置相应头，发送完直接返回
+    if (set_fin_) return;
     if (!set_syn_) {
         // 构建tcp报文
         TCPSegment seg;
         seg.header().seqno = next_seqno();
         seg.header().syn = true;
         _next_seqno++;
+        bytes_in_flight_++;
         set_syn_ = true;
         _segments_out.push(seg);
         unfinished_segments_.push(seg);
-        bytes_in_flight_++;
 
         // 修改时钟
 //        time_count_ = 0;
@@ -90,6 +91,10 @@ void TCPSender::fill_window() {
         _segments_out.push(seg);
         unfinished_segments_.push(seg);
 
+        if (!retransmissions_timer_running_) {
+            retransmissions_timer_running_ = true;
+            time_count_ = 0;
+        }
         /*
          * 这里不需要修改时钟，因为时钟都是在ack那里进行更新处理，在tick那里进行超时重传
          * 如果在这里进行更新，则时钟的性质变成了，记录最新发送的报文的时间，而不再是最老发送的报文的时间
@@ -101,6 +106,7 @@ void TCPSender::fill_window() {
 //        consecutive_retransmission_times_ = 0;
     }
 }
+
 
 //! \param ackno The remote receiver's ackno (acknowledgment number)
 //! \param window_size The remote receiver's advertised window size
@@ -114,7 +120,7 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
     // 对还未发送的字节进行确认，因此直接返回
     window_size_ = window_size;
     if (ackno_abs > _next_seqno) {
-        fill_window();
+//        fill_window();
         return;
     }
     // 将所有被该ack号完全累计确认的段从unfinished_segments_中pop
@@ -142,6 +148,8 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
     // 从ack包里得到了当前接收方的新window_size，这个新的window可能比之前更大
     // 使得发送方可以发送新的数据，因此需要调用fill_window
     fill_window();
+    // 重传计时器目前是否是启动状态取决于是否有报文未完成
+    retransmissions_timer_running_ = !unfinished_segments_.empty();
 }
 
 //! \param[in] ms_since_last_tick the number of milliseconds since the last call to this method
@@ -152,10 +160,11 @@ void TCPSender::tick(const size_t ms_since_last_tick) {
     if (!unfinished_segments_.empty() && time_count_ >= time_rto_) {
         TCPSegment temp_seq = unfinished_segments_.front();
         _segments_out.push(temp_seq);
-        if (window_size_ != 0)
+        if (window_size_ != 0 || temp_seq.header().syn) {
             time_rto_ *= 2;
+            consecutive_retransmission_times_++;
+        }
         time_count_ = 0;
-        consecutive_retransmission_times_++;
     }
 }
 

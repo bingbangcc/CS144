@@ -176,7 +176,7 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
 //            _receiver.segment_received(seg);
             // 这里FIN是有序号的，因此需要进行ACK
             _sender.ack_received(header.ackno, header.win);
-//            _sender.send_empty_segment();
+            _sender.send_empty_segment();
             send_segments();
         }
         // 这说明对面已经收到我们对他FIN报文的ACK，因此对方不会再发送数据，每次都仅对我们的报文发送空包进行ACK

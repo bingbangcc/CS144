@@ -38,6 +38,7 @@ class StreamReassembler {
     size_t unassenbled_size_ = 0;
     size_t eof_index_ = -1;
     bool eof_flag_ = false;
+
     // 用来记录unassenbled的strs
     // (begin, end) -> end-begin+1 = str.len
     struct node{

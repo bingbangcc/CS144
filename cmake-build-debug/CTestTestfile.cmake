@@ -66,7 +66,7 @@ add_test(t_byte_stream_many_writes "/home/bingbong/compiler/network/cmake-build-
 set_tests_properties(t_byte_stream_many_writes PROPERTIES  _BACKTRACE_TRIPLES "/home/bingbong/compiler/network/etc/tests.cmake;38;add_test;/home/bingbong/compiler/network/etc/tests.cmake;0;;/home/bingbong/compiler/network/CMakeLists.txt;27;include;/home/bingbong/compiler/network/CMakeLists.txt;0;")
 add_test(t_webget "/home/bingbong/compiler/network/tests/webget_t.sh")
 set_tests_properties(t_webget PROPERTIES  _BACKTRACE_TRIPLES "/home/bingbong/compiler/network/etc/tests.cmake;40;add_test;/home/bingbong/compiler/network/etc/tests.cmake;0;;/home/bingbong/compiler/network/CMakeLists.txt;27;include;/home/bingbong/compiler/network/CMakeLists.txt;0;")
-add_test(arp_network_interface "net_interface")
+add_test(arp_network_interface "/home/bingbong/compiler/network/cmake-build-debug/tests/net_interface")
 set_tests_properties(arp_network_interface PROPERTIES  _BACKTRACE_TRIPLES "/home/bingbong/compiler/network/etc/tests.cmake;42;add_test;/home/bingbong/compiler/network/etc/tests.cmake;0;;/home/bingbong/compiler/network/CMakeLists.txt;27;include;/home/bingbong/compiler/network/CMakeLists.txt;0;")
 add_test(router_test "network_simulator")
 set_tests_properties(router_test PROPERTIES  _BACKTRACE_TRIPLES "/home/bingbong/compiler/network/etc/tests.cmake;44;add_test;/home/bingbong/compiler/network/etc/tests.cmake;0;;/home/bingbong/compiler/network/CMakeLists.txt;27;include;/home/bingbong/compiler/network/CMakeLists.txt;0;")

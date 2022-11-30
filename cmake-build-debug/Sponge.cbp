@@ -47,16 +47,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="check_lab1">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab1"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="tidy_tests__wrapping_integers_unwrap.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -387,16 +377,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tests__fsm_stream_reassembler_overlapping.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_stream_reassembler_overlapping.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="tidy_quiet_tests__fsm_stream_reassembler_holes.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -457,31 +437,41 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
+			<Target title="tidy_tests__fsm_retx_relaxed.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_retx_relaxed.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tests__network_interface_test_harness.cc">
+			<Target title="tidy_quiet_tests__fsm_retx_relaxed.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__network_interface_test_harness.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_retx_relaxed.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tcp_helpers__tcp_sponge_socket.cc">
+			<Target title="tidy_quiet_tests__fsm_retx.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_sponge_socket.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_retx.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__fsm_loopback_win.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_loopback_win.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -617,26 +607,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tcp_helpers__tcp_header.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_header.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_doctests__address_example_2.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_example_2.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="tidy_doctests__address_example_1.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -647,61 +617,11 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_src__wrapping_integers.cc">
+			<Target title="tidy_quiet_tcp_helpers__ethernet_header.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_src__wrapping_integers.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tcp_helpers__tcp_over_ip.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_over_ip.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tcp_helpers__tcp_over_ip.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_over_ip.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__fsm_listen.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_listen.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__fsm_listen_relaxed.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_listen_relaxed.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_src__stream_reassembler.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_src__stream_reassembler.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__ethernet_header.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -727,6 +647,26 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="tidy_quiet_src__wrapping_integers.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_src__wrapping_integers.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_src__stream_reassembler.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_src__stream_reassembler.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="tidy_quiet_doctests__socket_dt.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -737,111 +677,31 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_apps__tun.cc">
+			<Target title="tidy_quiet_tests__send_transmit.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tun.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__send_transmit.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_apps__tun.cc">
+			<Target title="tidy_quiet_apps__tcp_native.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tun.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tcp_native.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_doctests__address_dt.cc">
+			<Target title="tidy_quiet_tcp_helpers__arp_message.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_dt.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__recv_reorder.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__recv_reorder.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__fsm_connect.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_connect.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_verbose">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_verbose"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__net_interface.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__net_interface.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tcp_helpers__ipv4_datagram.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__ipv4_datagram.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tcp_helpers__tcp_state.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_state.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__fsm_retx_relaxed.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_retx_relaxed.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_doctests__address_example_2.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_2.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__arp_message.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -872,26 +732,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__fd_adapter.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__send_transmit.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__send_transmit.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_apps__tcp_native.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tcp_native.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -947,21 +787,31 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_util__buffer.cc">
+			<Target title="tidy_quiet_tests__fsm_stream_reassembler_cap.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__buffer.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_stream_reassembler_cap.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_util__util.cc">
+			<Target title="tidy_tests__fsm_retx.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__util.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_retx.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__fsm_ack_rst.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_ack_rst.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -987,21 +837,101 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tcp_helpers__fd_adapter.cc">
+			<Target title="check_lab1">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__fd_adapter.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 check_lab1"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_doctests__parser_example.cc">
+			<Target title="tidy_apps__tcp_ip_ethernet.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__parser_example.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tcp_ip_ethernet.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_src__byte_stream.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_src__byte_stream.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__socket_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_apps__webget.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__webget.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__fsm_stream_reassembler_overlapping.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_stream_reassembler_overlapping.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_apps__tcp_ip_ethernet.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tcp_ip_ethernet.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__send_window.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__send_window.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__file_descriptor.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__file_descriptor.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1022,6 +952,36 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_many_writes.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__ethernet_frame.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__ethernet_frame.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_apps__tcp_benchmark.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tcp_benchmark.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__eventloop.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__eventloop.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1107,111 +1067,61 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_util__eventloop.cc">
+			<Target title="tidy_quiet_tests__fsm_passive_close.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__eventloop.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_passive_close.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_apps__tcp_benchmark.cc">
+			<Target title="tidy_apps__tcp_udp.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tcp_benchmark.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tcp_udp.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_doctests__socket_example_2.cc">
+			<Target title="tidy_quiet_doctests__address_example_2.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__socket_example_2.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_2.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_apps__webget.cc">
+			<Target title="tidy_quiet_apps__tun.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__webget.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__tun.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tests__send_equivalence_checker.cc">
+			<Target title="tidy_apps__tun.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__send_equivalence_checker.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tun.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tcp_helpers__tcp_header.cc">
+			<Target title="tidy_doctests__address_dt.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_header.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tcp_helpers__tcp_segment.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_segment.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__byte_stream_test_harness.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_test_harness.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_apps__tcp_benchmark.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tcp_benchmark.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="doc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_src__byte_stream.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_src__byte_stream.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_dt.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1247,6 +1157,16 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="tidy_tcp_helpers__ethernet_frame.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__ethernet_frame.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="tidy_doctests__socket_example_1.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -1267,11 +1187,31 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tests__fsm_retx_relaxed.cc">
+			<Target title="test">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_retx_relaxed.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__network_interface_test_harness.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__network_interface_test_harness.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tcp_helpers__tcp_sponge_socket.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_sponge_socket.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1282,6 +1222,16 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__address_example_1.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_src__network_interface.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_src__network_interface.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1337,11 +1287,71 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tcp_helpers__ipv4_header.cc">
+			<Target title="tidy_doctests__parser_example.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__ipv4_header.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__parser_example.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__fd_adapter.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__fd_adapter.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_verbose">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_verbose"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__net_interface.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__net_interface.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__ipv4_datagram.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__ipv4_datagram.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__tcp_state.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_state.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_doctests__parser_dt.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__parser_dt.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1367,11 +1377,181 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_doctests__parser_dt.cc">
+			<Target title="tidy_tcp_helpers__ipv4_header.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_doctests__parser_dt.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__ipv4_header.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_doctests__address_example_2.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_doctests__address_example_2.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__tcp_header.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_header.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__send_equivalence_checker.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__send_equivalence_checker.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tcp_helpers__tcp_header.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_header.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__tcp_over_ip.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_over_ip.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__fsm_listen.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_listen.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__fsm_listen_relaxed.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_listen_relaxed.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tcp_helpers__arp_message.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__arp_message.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tcp_helpers__tcp_over_ip.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_over_ip.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_apps__tcp_benchmark.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tcp_benchmark.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__byte_stream_test_harness.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__byte_stream_test_harness.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tcp_helpers__tcp_segment.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_segment.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tests__recv_reorder.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__recv_reorder.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_src__network_interface.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_src__network_interface.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_tests__fsm_connect.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_connect.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_util__util.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__util.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_util__buffer.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_util__buffer.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1397,21 +1577,21 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tcp_helpers__tcp_segment.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_segment.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="tidy_tcp_helpers__tcp_state.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__tcp_state.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tidy_quiet_tcp_helpers__tcp_segment.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_segment.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1547,16 +1727,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_quiet_tests__fsm_retx.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_retx.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="tidy_util__address.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -1627,21 +1797,11 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tidy_tests__send_window.cc">
+			<Target title="tidy_quiet_apps__bidirectional_stream_copy.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__send_window.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_util__file_descriptor.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_util__file_descriptor.cc"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__bidirectional_stream_copy.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1652,16 +1812,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tcp_helpers__tcp_sponge_socket.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_apps__bidirectional_stream_copy.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_apps__bidirectional_stream_copy.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1857,6 +2007,16 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="tidy_tcp_helpers__ethernet_header.cc">
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tcp_helpers__ethernet_header.cc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="tidy_quiet_tests__byte_stream_one_write.cc">
 				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
 				<Option type="4"/>
@@ -1892,36 +2052,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__byte_stream_two_writes.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__fsm_stream_reassembler_cap.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_stream_reassembler_cap.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__fsm_retx.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_retx.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__fsm_ack_rst.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_ack_rst.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2042,36 +2172,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_listen_relaxed.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_tests__fsm_loopback_win.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_tests__fsm_loopback_win.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_apps__tcp_udp.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_apps__tcp_udp.cc"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tidy_quiet_tests__fsm_passive_close.cc">
-				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 tidy_quiet_tests__fsm_passive_close.cc"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2222,6 +2322,56 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 webget/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcp_ip_ethernet">
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/apps/tcp_ip_ethernet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/apps"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bingbong/compiler/network/src/util"/>
+					<Add directory="/home/bingbong/compiler/network/src/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/src"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 tcp_ip_ethernet"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tcp_ip_ethernet/fast">
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/apps/tcp_ip_ethernet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/apps"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bingbong/compiler/network/src/util"/>
+					<Add directory="/home/bingbong/compiler/network/src/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/src"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 tcp_ip_ethernet/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2525,6 +2675,56 @@
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/apps/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="net_interface">
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/net_interface" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bingbong/compiler/network/src/util"/>
+					<Add directory="/home/bingbong/compiler/network/src/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/src"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 net_interface"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="net_interface/fast">
+				<Option output="/home/bingbong/compiler/network/cmake-build-debug/tests/net_interface" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bingbong/compiler/network/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bingbong/compiler/network/src/util"/>
+					<Add directory="/home/bingbong/compiler/network/src/tcp_helpers"/>
+					<Add directory="/home/bingbong/compiler/network/src"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 net_interface/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bingbong/compiler/network/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="send_close">
@@ -4937,6 +5137,9 @@
 		<Unit filename="/home/bingbong/compiler/network/apps/tcp_benchmark.cc">
 			<Option target="tcp_benchmark"/>
 		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/apps/tcp_ip_ethernet.cc">
+			<Option target="tcp_ip_ethernet"/>
+		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/apps/tcp_ipv4.cc">
 			<Option target="tcp_ipv4"/>
 		</Unit>
@@ -4970,6 +5173,12 @@
 		<Unit filename="/home/bingbong/compiler/network/src/byte_stream.hh">
 			<Option target="sponge"/>
 		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/network_interface.cc">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/network_interface.hh">
+			<Option target="sponge"/>
+		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/src/stream_reassembler.cc">
 			<Option target="sponge"/>
 		</Unit>
@@ -4980,6 +5189,24 @@
 			<Option target="sponge"/>
 		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/src/tcp_connection.hh">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/arp_message.cc">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/arp_message.hh">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/ethernet_frame.cc">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/ethernet_frame.hh">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.cc">
+			<Option target="sponge"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh">
 			<Option target="sponge"/>
 		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/src/tcp_helpers/fd_adapter.cc">
@@ -5185,6 +5412,15 @@
 		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/tests/ipv4_parser.cc">
 			<Option target="ipv4_parser"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/tests/net_interface.cc">
+			<Option target="net_interface"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/tests/network_interface_test_harness.cc">
+			<Option target="spongechecks"/>
+		</Unit>
+		<Unit filename="/home/bingbong/compiler/network/tests/network_interface_test_harness.hh">
+			<Option target="spongechecks"/>
 		</Unit>
 		<Unit filename="/home/bingbong/compiler/network/tests/recv_close.cc">
 			<Option target="recv_close"/>

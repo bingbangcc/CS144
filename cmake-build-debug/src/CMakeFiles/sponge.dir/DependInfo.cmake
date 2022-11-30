@@ -5,8 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bingbong/compiler/network/src/byte_stream.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/byte_stream.cc.o"
+  "/home/bingbong/compiler/network/src/network_interface.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/network_interface.cc.o"
   "/home/bingbong/compiler/network/src/stream_reassembler.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/stream_reassembler.cc.o"
   "/home/bingbong/compiler/network/src/tcp_connection.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_connection.cc.o"
+  "/home/bingbong/compiler/network/src/tcp_helpers/arp_message.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o"
+  "/home/bingbong/compiler/network/src/tcp_helpers/ethernet_frame.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o"
+  "/home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o"
   "/home/bingbong/compiler/network/src/tcp_helpers/fd_adapter.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/fd_adapter.cc.o"
   "/home/bingbong/compiler/network/src/tcp_helpers/ipv4_datagram.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/ipv4_datagram.cc.o"
   "/home/bingbong/compiler/network/src/tcp_helpers/ipv4_header.cc" "/home/bingbong/compiler/network/cmake-build-debug/src/CMakeFiles/sponge.dir/tcp_helpers/ipv4_header.cc.o"

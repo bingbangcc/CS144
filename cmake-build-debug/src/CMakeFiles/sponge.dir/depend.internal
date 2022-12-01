@@ -4,6 +4,28 @@
 src/CMakeFiles/sponge.dir/byte_stream.cc.o
  /home/bingbong/compiler/network/src/byte_stream.cc
  /home/bingbong/compiler/network/src/byte_stream.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o
+ ../src/tcp_helpers/arp_message.hh
+ ../src/tcp_helpers/ethernet_frame.hh
+ ../src/tcp_helpers/ethernet_header.hh
+ ../src/tcp_helpers/fd_adapter.hh
+ ../src/tcp_helpers/ipv4_datagram.hh
+ ../src/tcp_helpers/ipv4_header.hh
+ ../src/tcp_helpers/lossy_fd_adapter.hh
+ ../src/tcp_helpers/tcp_config.hh
+ ../src/tcp_helpers/tcp_header.hh
+ ../src/tcp_helpers/tcp_over_ip.hh
+ ../src/tcp_helpers/tcp_segment.hh
+ ../src/util/address.hh
+ ../src/util/buffer.hh
+ ../src/util/file_descriptor.hh
+ ../src/util/parser.hh
+ ../src/util/socket.hh
+ ../src/util/tun.hh
+ ../src/util/util.hh
+ ../src/wrapping_integers.hh
+ /home/bingbong/compiler/network/src/network_interface.cc
+ /home/bingbong/compiler/network/src/network_interface.hh
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o
  /home/bingbong/compiler/network/src/byte_stream.hh
  /home/bingbong/compiler/network/src/stream_reassembler.cc
@@ -23,6 +45,26 @@ src/CMakeFiles/sponge.dir/tcp_connection.cc.o
  /home/bingbong/compiler/network/src/tcp_connection.hh
  /home/bingbong/compiler/network/src/tcp_receiver.hh
  /home/bingbong/compiler/network/src/tcp_sender.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o
+ ../src/util/buffer.hh
+ ../src/util/parser.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/arp_message.cc
+ /home/bingbong/compiler/network/src/tcp_helpers/arp_message.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ipv4_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o
+ ../src/util/buffer.hh
+ ../src/util/parser.hh
+ ../src/util/util.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_frame.cc
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_frame.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o
+ ../src/util/buffer.hh
+ ../src/util/parser.hh
+ ../src/util/util.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.cc
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/fd_adapter.cc.o
  ../src/util/address.hh
  ../src/util/buffer.hh
@@ -83,8 +125,13 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_segment.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o
  ../src/byte_stream.hh
+ ../src/network_interface.hh
  ../src/stream_reassembler.hh
  ../src/tcp_connection.hh
+ ../src/tcp_helpers/ethernet_frame.hh
+ ../src/tcp_helpers/ipv4_datagram.hh
+ ../src/tcp_helpers/ipv4_header.hh
+ ../src/tcp_helpers/tcp_over_ip.hh
  ../src/tcp_helpers/tcp_state.hh
  ../src/tcp_receiver.hh
  ../src/tcp_sender.hh
@@ -97,13 +144,11 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o
  ../src/util/tun.hh
  ../src/util/util.hh
  ../src/wrapping_integers.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh
  /home/bingbong/compiler/network/src/tcp_helpers/fd_adapter.hh
- /home/bingbong/compiler/network/src/tcp_helpers/ipv4_datagram.hh
- /home/bingbong/compiler/network/src/tcp_helpers/ipv4_header.hh
  /home/bingbong/compiler/network/src/tcp_helpers/lossy_fd_adapter.hh
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_config.hh
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_header.hh
- /home/bingbong/compiler/network/src/tcp_helpers/tcp_over_ip.hh
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_segment.hh
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_sponge_socket.cc
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_sponge_socket.hh
@@ -123,6 +168,16 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_state.cc
  /home/bingbong/compiler/network/src/tcp_helpers/tcp_state.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o
+ ../src/network_interface.hh
+ ../src/tcp_helpers/ethernet_frame.hh
+ ../src/tcp_helpers/fd_adapter.hh
+ ../src/tcp_helpers/ipv4_datagram.hh
+ ../src/tcp_helpers/ipv4_header.hh
+ ../src/tcp_helpers/lossy_fd_adapter.hh
+ ../src/tcp_helpers/tcp_config.hh
+ ../src/tcp_helpers/tcp_header.hh
+ ../src/tcp_helpers/tcp_over_ip.hh
+ ../src/tcp_helpers/tcp_segment.hh
  ../src/util/address.hh
  ../src/util/buffer.hh
  ../src/util/file_descriptor.hh
@@ -131,14 +186,7 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o
  ../src/util/tun.hh
  ../src/util/util.hh
  ../src/wrapping_integers.hh
- /home/bingbong/compiler/network/src/tcp_helpers/fd_adapter.hh
- /home/bingbong/compiler/network/src/tcp_helpers/ipv4_datagram.hh
- /home/bingbong/compiler/network/src/tcp_helpers/ipv4_header.hh
- /home/bingbong/compiler/network/src/tcp_helpers/lossy_fd_adapter.hh
- /home/bingbong/compiler/network/src/tcp_helpers/tcp_config.hh
- /home/bingbong/compiler/network/src/tcp_helpers/tcp_header.hh
- /home/bingbong/compiler/network/src/tcp_helpers/tcp_over_ip.hh
- /home/bingbong/compiler/network/src/tcp_helpers/tcp_segment.hh
+ /home/bingbong/compiler/network/src/tcp_helpers/ethernet_header.hh
  /home/bingbong/compiler/network/src/tcp_helpers/tuntap_adapter.cc
  /home/bingbong/compiler/network/src/tcp_helpers/tuntap_adapter.hh
 src/CMakeFiles/sponge.dir/tcp_receiver.cc.o

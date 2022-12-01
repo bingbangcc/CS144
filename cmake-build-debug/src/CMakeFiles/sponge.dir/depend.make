@@ -4,6 +4,28 @@
 src/CMakeFiles/sponge.dir/byte_stream.cc.o: ../src/byte_stream.cc
 src/CMakeFiles/sponge.dir/byte_stream.cc.o: ../src/byte_stream.hh
 
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/arp_message.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/ethernet_frame.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/ethernet_header.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/fd_adapter.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/ipv4_datagram.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/ipv4_header.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/lossy_fd_adapter.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/tcp_config.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/tcp_header.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/tcp_over_ip.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/tcp_helpers/tcp_segment.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/address.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/file_descriptor.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/socket.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/tun.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/util/util.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/network_interface.cc
+src/CMakeFiles/sponge.dir/network_interface.cc.o: ../src/network_interface.hh
+
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/byte_stream.hh
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/stream_reassembler.cc
 src/CMakeFiles/sponge.dir/stream_reassembler.cc.o: ../src/stream_reassembler.hh
@@ -22,6 +44,26 @@ src/CMakeFiles/sponge.dir/tcp_connection.cc.o: ../src/tcp_connection.cc
 src/CMakeFiles/sponge.dir/tcp_connection.cc.o: ../src/tcp_connection.hh
 src/CMakeFiles/sponge.dir/tcp_connection.cc.o: ../src/tcp_receiver.hh
 src/CMakeFiles/sponge.dir/tcp_connection.cc.o: ../src/tcp_sender.hh
+
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/tcp_helpers/arp_message.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/tcp_helpers/arp_message.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/tcp_helpers/ethernet_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o: ../src/tcp_helpers/ipv4_header.hh
+
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/util/util.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/tcp_helpers/ethernet_frame.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/tcp_helpers/ethernet_frame.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o: ../src/tcp_helpers/ethernet_header.hh
+
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o: ../src/util/util.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o: ../src/tcp_helpers/ethernet_header.cc
+src/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o: ../src/tcp_helpers/ethernet_header.hh
 
 src/CMakeFiles/sponge.dir/tcp_helpers/fd_adapter.cc.o: ../src/util/address.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/fd_adapter.cc.o: ../src/util/buffer.hh
@@ -82,8 +124,13 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/tcp_helpers/tcp_s
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_segment.cc.o: ../src/tcp_helpers/tcp_segment.hh
 
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/byte_stream.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/network_interface.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/stream_reassembler.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_connection.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ethernet_frame.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ipv4_datagram.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ipv4_header.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_over_ip.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_state.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_receiver.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_sender.hh
@@ -96,13 +143,11 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/util/socket
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/util/tun.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/util/util.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ethernet_header.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/fd_adapter.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ipv4_datagram.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/ipv4_header.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/lossy_fd_adapter.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_config.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_header.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_over_ip.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_segment.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_sponge_socket.cc
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_sponge_socket.cc.o: ../src/tcp_helpers/tcp_sponge_socket.hh
@@ -122,14 +167,8 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/wrapping_integers.h
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_state.cc
 src/CMakeFiles/sponge.dir/tcp_helpers/tcp_state.cc.o: ../src/tcp_helpers/tcp_state.hh
 
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/address.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/buffer.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/file_descriptor.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/parser.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/socket.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/tun.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/util.hh
-src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/network_interface.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/ethernet_frame.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/fd_adapter.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/ipv4_datagram.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/ipv4_header.hh
@@ -138,6 +177,15 @@ src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tc
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tcp_header.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tcp_over_ip.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tcp_segment.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/address.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/buffer.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/file_descriptor.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/parser.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/socket.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/tun.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/util/util.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/wrapping_integers.hh
+src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/ethernet_header.hh
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tuntap_adapter.cc
 src/CMakeFiles/sponge.dir/tcp_helpers/tuntap_adapter.cc.o: ../src/tcp_helpers/tuntap_adapter.hh
 

@@ -6,3 +6,57 @@ tests/CMakeFiles/spongechecks.dir/byte_stream_test_harness.cc.o: ../src/util/uti
 tests/CMakeFiles/spongechecks.dir/byte_stream_test_harness.cc.o: ../tests/byte_stream_test_harness.cc
 tests/CMakeFiles/spongechecks.dir/byte_stream_test_harness.cc.o: ../tests/byte_stream_test_harness.hh
 
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/network_interface.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/arp_message.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/ethernet_frame.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/ethernet_header.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/fd_adapter.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/ipv4_datagram.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/ipv4_header.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/lossy_fd_adapter.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/tcp_config.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/tcp_header.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/tcp_over_ip.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/tcp_helpers/tcp_segment.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/address.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/buffer.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/file_descriptor.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/parser.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/socket.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/tun.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/util/util.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../src/wrapping_integers.hh
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../tests/network_interface_test_harness.cc
+tests/CMakeFiles/spongechecks.dir/network_interface_test_harness.cc.o: ../tests/network_interface_test_harness.hh
+
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../src/tcp_helpers/tcp_header.hh
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../src/tcp_helpers/tcp_segment.hh
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../src/util/buffer.hh
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../src/util/parser.hh
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../src/wrapping_integers.hh
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../tests/send_equivalence_checker.cc
+tests/CMakeFiles/spongechecks.dir/send_equivalence_checker.cc.o: ../tests/send_equivalence_checker.hh
+
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/byte_stream.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/stream_reassembler.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_connection.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/fd_adapter.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/lossy_fd_adapter.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/tcp_config.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/tcp_header.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/tcp_segment.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_helpers/tcp_state.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_receiver.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/tcp_sender.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/address.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/buffer.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/file_descriptor.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/parser.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/socket.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/util/util.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../src/wrapping_integers.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../tests/tcp_expectation.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../tests/tcp_expectation_forward.hh
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../tests/tcp_fsm_test_harness.cc
+tests/CMakeFiles/spongechecks.dir/tcp_fsm_test_harness.cc.o: ../tests/tcp_fsm_test_harness.hh
+

@@ -7,7 +7,7 @@
 
 #include <optional>
 #include <queue>
-
+#include "list"
 //! \brief A "network interface" that connects IP (the internet layer, or network layer)
 //! with Ethernet (the network access layer, or link layer).
 
@@ -32,14 +32,26 @@
 class NetworkInterface {
   private:
     //! Ethernet (known as hardware, network-access-layer, or link-layer) address of the interface
+    // 以太网MAC地址
     EthernetAddress _ethernet_address;
 
+    // IP地址
     //! IP (known as internet-layer or network-layer) address of the interface
     Address _ip_address;
 
+    // 想要发送的帧序列
     //! outbound queue of Ethernet frames that the NetworkInterface wants sent
     std::queue<EthernetFrame> _frames_out{};
-
+    // ip->(MAC, time)
+    std::unordered_map<uint32_t , std::pair<EthernetAddress, size_t>> arp_table_{};
+    // 已经发送arp申请但还没有收到回复, ip->time,到了五秒还没收到回复则进行重发
+    // 这是因为可能会发给同一个ip多个报文，没有这个的话则会对同一个ip进行多次arp，挤占带宽
+    std::unordered_map<uint32_t, size_t> waits_frames_{};
+    // 没有目标MAC地址，等待发送arp请求
+    // 这里可以出现对同一个ip发送多个报文
+//    std::list<std::pair<Address, InternetDatagram>> cache_data_;
+    std::unordered_map<uint32_t, std::queue<InternetDatagram>> cache_data_{};
+    size_t time_{0};
   public:
     //! \brief Construct a network interface with given Ethernet (network-access-layer) and IP (internet-layer) addresses
     NetworkInterface(const EthernetAddress &ethernet_address, const Address &ip_address);

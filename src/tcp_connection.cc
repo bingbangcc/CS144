@@ -233,9 +233,9 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
             _receiver.segment_received(seg);
             // FIN报文里没有ACK，不能进行sender的分析
             // 本方已经发送完毕数据，因此不需要进行sender分析
-            if (header.ack) {
-                _sender.ack_received(header.ackno, header.win);
-            }
+//            if (header.ack) {
+//                _sender.ack_received(header.ackno, header.win);
+//            }
             // FIN报文消耗序号，必须进行ACK
             _sender.send_empty_segment();
             send_segments();
@@ -243,7 +243,7 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
         else {
             // 对方发送的是数据报文段
             _receiver.segment_received(seg);
-            _sender.ack_received(header.ackno, header.win);
+//            _sender.ack_received(header.ackno, header.win);
             // 如果有消耗序号的话，则必须进行ACK
             if (seg.length_in_sequence_space() > 0) {
                 _sender.send_empty_segment();
@@ -257,34 +257,34 @@ void TCPConnection::segment_received(const TCPSegment &seg) {
         if (header.fin) {
             _receiver.segment_received(seg);
             // 有ACK，需要传给sender分析
-            _sender.ack_received(header.ackno, header.win);
+//            _sender.ack_received(header.ackno, header.win);
             _sender.send_empty_segment();
 //            send_segments();
         }
         send_segments();
     }
-    else if (tcp_state == State::CLOSING) {
-        // 这个是因为客户端发送了FIN，但是服务端也发送了FIN
-        // 此时已经收到对面的FIN报文，则对方不会再发送数据，因此不用receiver
-//        _receiver.segment_received(seg);
-        // 这说明之前我们对FIN报文的ACK对面没有收到，则ACK一下
-        if (header.fin) {
-            _receiver.segment_received(seg);
-            _sender.ack_received(header.ackno, header.win);
-            _sender.send_empty_segment();
-            send_segments();
-        }
-        else {
-            // 对方发送的是数据报文段
-            _receiver.segment_received(seg);
-            _sender.ack_received(header.ackno, header.win);
-            // 如果有消耗序号的话，则必须进行ACK
-            if (seg.length_in_sequence_space() > 0) {
-                _sender.send_empty_segment();
-            }
-            send_segments();
-        }
-    }
+//    else if (tcp_state == State::CLOSING) {
+//        // 这个是因为客户端发送了FIN，但是服务端也发送了FIN
+//        // 此时已经收到对面的FIN报文，则对方不会再发送数据，因此不用receiver
+////        _receiver.segment_received(seg);
+//        // 这说明之前我们对FIN报文的ACK对面没有收到，则ACK一下
+//        if (header.fin) {
+//            _receiver.segment_received(seg);
+//            _sender.ack_received(header.ackno, header.win);
+//            _sender.send_empty_segment();
+//            send_segments();
+//        }
+//        else {
+//            // 对方发送的是数据报文段
+//            _receiver.segment_received(seg);
+//            _sender.ack_received(header.ackno, header.win);
+//            // 如果有消耗序号的话，则必须进行ACK
+//            if (seg.length_in_sequence_space() > 0) {
+//                _sender.send_empty_segment();
+//            }
+//            send_segments();
+//        }
+//    }
     else {
         _receiver.segment_received(seg);
         _sender.ack_received(header.ackno, header.win);
